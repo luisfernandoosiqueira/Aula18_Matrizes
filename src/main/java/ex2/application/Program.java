@@ -64,8 +64,8 @@ public class Program {
         System.out.println("Enter X:");
         int X = scanner.nextInt();
 
-        Posicao mat = new Posicao();
-        mat.Position(matriz, X);
+        Posicao mat = new Posicao(); // Instanciação da classe sem argumentos.
+        mat.Position(matriz, X); // Chama o método e insere dois argumentos, a matriz completa e o número escolhido.
 
         scanner.close();
     }

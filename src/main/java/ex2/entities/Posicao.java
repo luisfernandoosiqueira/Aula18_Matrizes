@@ -27,12 +27,14 @@ public class Posicao {
     public Posicao() {
     }
 
-    public void Position(int[][] matriz, int elemento) {
+    public void Position(int[][] matriz, int elemento) { // Cria o método recebendo a matriz completa como argumento e um número que o usuário irá informar.
+        
         int M = matriz.length;      // Obtém o número de linhas da matriz
         int N = matriz[0].length;  // Obtém o número de colunas da matriz, assumindo que todas as linhas têm o mesmo tamanho
 
         for (int i = 0; i < M; i++) {
             for (int j = 0; j < N; j++) {
+                
                 if (matriz[i][j] == elemento) {
                     System.out.println("Position " + i + "," + j + ":");
                     if (j > 0) {
