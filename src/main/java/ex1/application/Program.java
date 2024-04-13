@@ -14,9 +14,9 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package application;
+package ex1.application;
 
-import entities.Matrizes;
+import ex1.entities.Matrizes;
 import java.util.Scanner;
 
 /**
