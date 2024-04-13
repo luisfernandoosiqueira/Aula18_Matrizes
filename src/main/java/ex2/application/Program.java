@@ -46,27 +46,27 @@ import java.util.Scanner;
 public class Program {
 
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        Scanner ler = new Scanner(System.in);
 
         System.out.println("Enter M and N:");
-        int M = scanner.nextInt();
-        int N = scanner.nextInt();
+        int linha = ler.nextInt();
+        int coluna = ler.nextInt();
 
-        int[][] matriz = new int[M][N];
+        int[][] matriz = new int[linha][coluna];
 
         System.out.println("Enter the matrix:");
-        for (int i = 0; i < M; i++) {
-            for (int j = 0; j < N; j++) {
-                matriz[i][j] = scanner.nextInt();
+        for (int i = 0; i < linha; i++) {
+            for (int j = 0; j < coluna; j++) {
+                matriz[i][j] = ler.nextInt();
             }
         }
 
         System.out.println("Enter X:");
-        int X = scanner.nextInt();
+        int X = ler.nextInt();
 
         Posicao mat = new Posicao(); // Instanciação da classe sem argumentos.
         mat.Position(matriz, X); // Chama o método e insere dois argumentos, a matriz completa e o número escolhido.
 
-        scanner.close();
+        ler.close();
     }
 }
