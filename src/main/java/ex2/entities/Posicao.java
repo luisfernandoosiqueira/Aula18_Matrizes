@@ -48,6 +48,9 @@ public class Posicao {
                     }
                     if (i < linha - 1) {
                         System.out.println("Down: " + matriz[i + 1][j]);
+                        
+                        System.out.println("-------------------------");
+                        
                     }
                 }
             }
