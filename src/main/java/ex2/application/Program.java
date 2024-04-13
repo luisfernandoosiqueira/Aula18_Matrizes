@@ -48,7 +48,7 @@ public class Program {
     public static void main(String[] args) {
         Scanner ler = new Scanner(System.in);
 
-        System.out.println("Enter M and N:");
+        System.out.println("Enter linha and coluna:");
         int linha = ler.nextInt();
         int coluna = ler.nextInt();
 
@@ -62,10 +62,10 @@ public class Program {
         }
 
         System.out.println("Enter X:");
-        int X = ler.nextInt();
+        int numero = ler.nextInt();
 
         Posicao mat = new Posicao(); // Instanciação da classe sem argumentos.
-        mat.Position(matriz, X); // Chama o método e insere dois argumentos, a matriz completa e o número escolhido.
+        mat.Position(matriz, numero); // Chama o método e insere dois argumentos, a matriz completa e o número escolhido.
 
         ler.close();
     }
